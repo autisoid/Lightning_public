@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Proprietary|Win32">
+      <Configuration>Debug Proprietary</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Proprietary|Win32">
+      <Configuration>Release Proprietary</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{fb3cdaeb-d94b-4212-bbda-51e11a3ec202}</ProjectGuid>
+    <RootNamespace>angelscript</RootNamespace>
+    <WindowsTargetPlatformVersion>$([Microsoft.Build.Utilities.ToolLocationHelper]::GetLatestSDKTargetPlatformVersion('Windows', '10.0'))</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Proprietary|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Proprietary|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Proprietary|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Proprietary|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(SolutionDir)External\Lib\$(TargetName)_debug$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Proprietary|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(SolutionDir)External\Lib\$(TargetName)_debug$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(SolutionDir)External\Lib\$(TargetName)_release$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Proprietary|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(SolutionDir)External\Lib\$(TargetName)_release$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="angelscript.h" />
+    <ClInclude Include="as_array.h" />
+    <ClInclude Include="as_atomic.h" />
+    <ClInclude Include="as_builder.h" />
+    <ClInclude Include="as_bytecode.h" />
+    <ClInclude Include="as_callfunc.h" />
+    <ClInclude Include="as_compiler.h" />
+    <ClInclude Include="as_config.h" />
+    <ClInclude Include="as_configgroup.h" />
+    <ClInclude Include="as_context.h" />
+    <ClInclude Include="as_criticalsection.h" />
+    <ClInclude Include="as_datatype.h" />
+    <ClInclude Include="as_debug.h" />
+    <ClInclude Include="as_gc.h" />
+    <ClInclude Include="as_generic.h" />
+    <ClInclude Include="as_map.h" />
+    <ClInclude Include="as_memory.h" />
+    <ClInclude Include="as_module.h" />
+    <ClInclude Include="as_namespace.h" />
+    <ClInclude Include="as_objecttype.h" />
+    <ClInclude Include="as_outputbuffer.h" />
+    <ClInclude Include="as_parser.h" />
+    <ClInclude Include="as_property.h" />
+    <ClInclude Include="as_restore.h" />
+    <ClInclude Include="as_scriptcode.h" />
+    <ClInclude Include="as_scriptengine.h" />
+    <ClInclude Include="as_scriptfunction.h" />
+    <ClInclude Include="as_scriptnode.h" />
+    <ClInclude Include="as_scriptobject.h" />
+    <ClInclude Include="as_string.h" />
+    <ClInclude Include="as_string_util.h" />
+    <ClInclude Include="as_symboltable.h" />
+    <ClInclude Include="as_texts.h" />
+    <ClInclude Include="as_thread.h" />
+    <ClInclude Include="as_tokendef.h" />
+    <ClInclude Include="as_tokenizer.h" />
+    <ClInclude Include="as_typeinfo.h" />
+    <ClInclude Include="as_variablescope.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="as_atomic.cpp" />
+    <ClCompile Include="as_builder.cpp" />
+    <ClCompile Include="as_bytecode.cpp" />
+    <ClCompile Include="as_callfunc.cpp" />
+    <ClCompile Include="as_callfunc_arm.cpp" />
+    <ClCompile Include="as_callfunc_arm64.cpp" />
+    <ClCompile Include="as_callfunc_mips.cpp" />
+    <ClCompile Include="as_callfunc_ppc.cpp" />
+    <ClCompile Include="as_callfunc_ppc_64.cpp" />
+    <ClCompile Include="as_callfunc_riscv64.cpp" />
+    <ClCompile Include="as_callfunc_sh4.cpp" />
+    <ClCompile Include="as_callfunc_x64_gcc.cpp" />
+    <ClCompile Include="as_callfunc_x64_mingw.cpp" />
+    <ClCompile Include="as_callfunc_x64_msvc.cpp" />
+    <ClCompile Include="as_callfunc_x86.cpp" />
+    <ClCompile Include="as_callfunc_xenon.cpp" />
+    <ClCompile Include="as_compiler.cpp" />
+    <ClCompile Include="as_configgroup.cpp" />
+    <ClCompile Include="as_context.cpp" />
+    <ClCompile Include="as_datatype.cpp" />
+    <ClCompile Include="as_gc.cpp" />
+    <ClCompile Include="as_generic.cpp" />
+    <ClCompile Include="as_globalproperty.cpp" />
+    <ClCompile Include="as_memory.cpp" />
+    <ClCompile Include="as_module.cpp" />
+    <ClCompile Include="as_objecttype.cpp" />
+    <ClCompile Include="as_outputbuffer.cpp" />
+    <ClCompile Include="as_parser.cpp" />
+    <ClCompile Include="as_restore.cpp" />
+    <ClCompile Include="as_scriptcode.cpp" />
+    <ClCompile Include="as_scriptengine.cpp" />
+    <ClCompile Include="as_scriptfunction.cpp" />
+    <ClCompile Include="as_scriptnode.cpp" />
+    <ClCompile Include="as_scriptobject.cpp" />
+    <ClCompile Include="as_string.cpp" />
+    <ClCompile Include="as_string_util.cpp" />
+    <ClCompile Include="as_thread.cpp" />
+    <ClCompile Include="as_tokenizer.cpp" />
+    <ClCompile Include="as_typeinfo.cpp" />
+    <ClCompile Include="as_variablescope.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="as_callfunc_arm64_gcc.S" />
+    <None Include="as_callfunc_arm64_msvc.asm" />
+    <None Include="as_callfunc_arm64_xcode.S" />
+    <None Include="as_callfunc_arm_gcc.S" />
+    <None Include="as_callfunc_arm_msvc.asm" />
+    <None Include="as_callfunc_arm_vita.S" />
+    <None Include="as_callfunc_arm_xcode.S" />
+    <None Include="as_callfunc_riscv64_gcc.S" />
+    <None Include="as_callfunc_x64_msvc_asm.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

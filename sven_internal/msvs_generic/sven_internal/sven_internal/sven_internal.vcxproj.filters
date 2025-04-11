@@ -1,0 +1,1142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{5eb1c467-e1f4-4ec7-a95c-46eb04c08031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\MinHook">
+      <UniqueIdentifier>{0f563ffc-873e-4ea6-a198-2f30f3533cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\MinHook\hde">
+      <UniqueIdentifier>{8aa5ad5b-9831-4742-8df0-416269dd7c38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules">
+      <UniqueIdentifier>{f3829c36-3bed-4fbf-9ddf-87ee330f50cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{c4e20cc8-55a7-4780-b94a-70e2fe1204c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{7985c721-093e-42df-bb5f-596ba334d2d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features">
+      <UniqueIdentifier>{36ecf966-9e31-4620-b13a-7211ce8c1603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\ImGui">
+      <UniqueIdentifier>{3c297a32-a534-45ac-b632-c56078bdf127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules">
+      <UniqueIdentifier>{59640a22-1730-45af-b7bc-e0dd2a9e28c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{81eb541e-3607-4c42-be26-d52b977b7bec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\functional_lite">
+      <UniqueIdentifier>{d01879c1-12b9-4462-8f07-c14ba17972d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\HLStrafe">
+      <UniqueIdentifier>{ca10bef0-4436-4471-aa56-9682cd7fe28e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\freetype">
+      <UniqueIdentifier>{9c72e04c-eed4-403d-82a2-1d7b27fc5bd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\freetype\include">
+      <UniqueIdentifier>{5073b006-6230-4fb2-b806-5ff1cf54fb55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\freetype\include\config">
+      <UniqueIdentifier>{9a466ffe-cd38-40b0-a85d-1b8655befef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\ImGui\misc">
+      <UniqueIdentifier>{0ec3709f-59a3-41c3-91ba-785a4a98d519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\ImGui\misc\freetype">
+      <UniqueIdentifier>{24641123-9453-4c86-a12b-129f417a8c58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\angelscript">
+      <UniqueIdentifier>{a858aee8-1b87-4996-b550-e19aa1e2c5e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{890d60a8-b541-4a04-8d20-25fc840934d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TAS">
+      <UniqueIdentifier>{8091b461-8803-4537-8f02-0407c718a232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompiled Header">
+      <UniqueIdentifier>{ab41916d-2b06-47a4-8fe2-27ed40f547c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strafer">
+      <UniqueIdentifier>{2bac73c2-f80b-402f-9a97-661bc5980aae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TAS\Artificial Intelligence">
+      <UniqueIdentifier>{2aa5e227-8ff8-4de0-a3a5-3d4d0688af6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Custom HUD">
+      <UniqueIdentifier>{1825ab79-b031-484c-9c02-78cac6b15bad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Custom Fonts">
+      <UniqueIdentifier>{b07455ae-cdcd-4757-a020-aa2744dc8a85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Custom HUD\Elements">
+      <UniqueIdentifier>{f0fb366f-5bb2-4154-80e2-3076d11b6f0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Header Files">
+      <UniqueIdentifier>{9c60d79c-c27c-4d1c-b325-716f301d6a57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Header Files\Combat">
+      <UniqueIdentifier>{672ee416-f9a8-465b-90b9-835b56aa1746}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Header Files\Designer">
+      <UniqueIdentifier>{e3e81ada-8705-413d-9c37-cd88c4b865e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Header Files\Exploit">
+      <UniqueIdentifier>{5ad5a520-b735-4336-85fd-1dbd0ab15fe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Header Files\Misc">
+      <UniqueIdentifier>{5403189e-aa9f-413b-aef1-94e2cbcdef63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Header Files\Movement">
+      <UniqueIdentifier>{d1ad74c7-7981-4dcd-905e-e19732cc5ba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Header Files\Render">
+      <UniqueIdentifier>{36d3aa00-c300-464c-b3e7-33588362f164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Header Files\Safety">
+      <UniqueIdentifier>{e80de14a-d828-4eef-8044-59d813b23faa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Source Files">
+      <UniqueIdentifier>{61f68a53-c093-465a-bc93-7468cf8b533a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Source Files\Safety">
+      <UniqueIdentifier>{aeb97967-bdcc-4c1b-ba64-334c6955ee8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Source Files\Render">
+      <UniqueIdentifier>{3df227ff-9365-4ffd-acbc-2ce70fc47dfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Source Files\Movement">
+      <UniqueIdentifier>{0310d1bc-adb7-4cf6-9cfd-f6f5cbd5f1de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Source Files\Misc">
+      <UniqueIdentifier>{a9460df2-3b60-40f1-a64b-47ccceb22696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Source Files\Exploit">
+      <UniqueIdentifier>{a01db631-0de2-4d9c-8a82-819871811969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Source Files\Designer">
+      <UniqueIdentifier>{6a15edb0-daf6-4200-b64a-0c858ca64d5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Features\Modules\Source Files\Combat">
+      <UniqueIdentifier>{b79326ab-d857-4396-a065-ccaa51502c82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\buffer.h">
+      <Filter>External\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\MinHook.h">
+      <Filter>External\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\trampoline.h">
+      <Filter>External\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\hde\hde32.h">
+      <Filter>External\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\hde\pstdint.h">
+      <Filter>External\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\hde\table32.h">
+      <Filter>External\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlsdk_mini.hpp">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="event_api.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="module.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="module_manager.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="value.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows_Hooks.hpp">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientDLL.hpp">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="patterns.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="MemUtils.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="virtual_console.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="click_gui.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_opengl3.h">
+      <Filter>External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_opengl3_loader.h">
+      <Filter>External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="file_mgr.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="config_mgr.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleIni.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\hde\hde64.h">
+      <Filter>External\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\hde\table64.h">
+      <Filter>External\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_empty_hdr.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_fake_sal2.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_allocator.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_arithmetic.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_assert.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_cast.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_config.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_math.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_memory.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_msvc_fixes.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_parameter_pack.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_preprocessor.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_rng.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_static_assert.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_stdbool.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_stddef.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_stdnull.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_string.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_type_traits.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_unique_ptr.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="functional_lite\functional_lite_vector.hpp">
+      <Filter>External\functional_lite</Filter>
+    </ClInclude>
+    <ClInclude Include="HLStrafe\hlstrafe.hpp">
+      <Filter>External\HLStrafe</Filter>
+    </ClInclude>
+    <ClInclude Include="HLStrafe\util.hpp">
+      <Filter>External\HLStrafe</Filter>
+    </ClInclude>
+    <ClInclude Include="notifications.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="dummyfile.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="command_hooks.hpp">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol.hpp">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="queue.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\ft2build.h">
+      <Filter>External\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\freetype.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftadvanc.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftbbox.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftbdf.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftbitmap.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftbzip2.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftcache.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftchapters.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftcid.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftcolor.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftdriver.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\fterrdef.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\fterrors.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftfntfmt.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftgasp.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftglyph.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftgxval.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftgzip.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftimage.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftincrem.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftlcdfil.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftlist.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftlogging.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftlzw.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftmac.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftmm.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftmodapi.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftmoderr.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftotval.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftoutln.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftparams.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftpfr.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftrender.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftsizes.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftsnames.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftstroke.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftsynth.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftsystem.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\fttrigon.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\fttypes.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ftwinfnt.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\otsvg.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\t1tables.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\ttnameid.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\tttables.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\tttags.h">
+      <Filter>External\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\config\ftconfig.h">
+      <Filter>External\freetype\include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\config\ftheader.h">
+      <Filter>External\freetype\include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\config\ftmodule.h">
+      <Filter>External\freetype\include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\config\ftoption.h">
+      <Filter>External\freetype\include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\config\ftstdlib.h">
+      <Filter>External\freetype\include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\config\integer-types.h">
+      <Filter>External\freetype\include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\config\mac-support.h">
+      <Filter>External\freetype\include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\External\Include\freetype\config\public-macros.h">
+      <Filter>External\freetype\include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_freetype.h">
+      <Filter>External\ImGui\misc\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="AlbertSansFont.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="compress.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="svenmod_emulation.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_player_info.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="player_sp.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="input_buttons.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="metahook_emulation.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="iface.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\angelscript.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_array.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_atomic.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_builder.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_bytecode.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_callfunc.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_compiler.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_config.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_configgroup.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_context.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_criticalsection.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_datatype.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_debug.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_gc.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_generic.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_map.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_memory.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_module.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_namespace.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_objecttype.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_outputbuffer.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_parser.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_property.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_restore.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_scriptcode.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_scriptengine.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_scriptfunction.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_scriptnode.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_scriptobject.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_string.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_string_util.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_symboltable.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_texts.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_thread.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_tokendef.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_tokenizer.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_typeinfo.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript\as_variablescope.h">
+      <Filter>External\angelscript</Filter>
+    </ClInclude>
+    <ClInclude Include="callstack.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="linked_list.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="call_routines.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="angelscript_scripting_api.hpp">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="scriptbuilder.h">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="scriptstdstring.h">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="scriptarray.h">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="script_console.hpp">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="script_module.hpp">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="as_enginestuff.hpp">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="as_vector.hpp">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="as_event_api.hpp">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="as_callroutines.hpp">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="movement_recorder.hpp">
+      <Filter>TAS</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Precompiled Header</Filter>
+    </ClInclude>
+    <ClInclude Include="strafe.hpp">
+      <Filter>Strafer</Filter>
+    </ClInclude>
+    <ClInclude Include="strafe_utils.hpp">
+      <Filter>Strafer</Filter>
+    </ClInclude>
+    <ClInclude Include="entity_descriptions.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="entity_list.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="as_value_api.hpp">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="scriptany.h">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="string_utils.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="string.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="script_string.hpp">
+      <Filter>Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_gui.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Precompiled Header</Filter>
+    </ClInclude>
+    <ClInclude Include="preprocessor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="custom_hud.hpp">
+      <Filter>Impl\Features\Custom HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="custom_fonts.hpp">
+      <Filter>Impl\Features\Custom Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="hud_arraylist_element.hpp">
+      <Filter>Impl\Features\Custom HUD\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="CAntiSlowhackModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Safety</Filter>
+    </ClInclude>
+    <ClInclude Include="CBobbingModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="CClickGUIModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="CESPModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="CFrameSkipperModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="CHUDModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="CAntiAimModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="CAutoJumpbugModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="CAutoJumpModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="CFakeLagModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpeedModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="CStrafeModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="CApplicationSpeedModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="CAutoFreezeOnChatModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="CAutoTertiaryAttackGlitchModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="CDebugModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="CMessageStealerModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="CMovementCommandRateLimiterModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="CAirStuckModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="CBreakLCModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="CConsoleSpammerModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="CDisablerModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="CFakeLatencyModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="CFastCrowbarModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="CInstantRespawnModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="CKickerModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="CSelfSinkModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="CServerCrasherModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="CSlideWalkModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="CStresserModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="CTimeMachineModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="CClientDesignerModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="CDiscordRPCModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="CBacktrackModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="CDoubletapModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="CForwardtrackModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="CRagebotModule.hpp">
+      <Filter>Impl\Features\Modules\Header Files\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="HwDLL.hpp">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="int_packet_dump.hpp">
+      <Filter>Modules</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HwDLL.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="module.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="module_manager.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientDLL.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="CDoubletapModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="CClickGUIModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="click_gui.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CSpeedModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="CFakeLagModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="CBreakLCModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="value.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="file_mgr.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="config_mgr.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CHUDModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="CClientDesignerModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="CAirStuckModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="CFrameSkipperModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="CAutoJumpModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="CApplicationSpeedModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="CFastCrowbarModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="CDebugModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="CAutoJumpbugModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="CInstantRespawnModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="CBobbingModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="HLStrafe\hlstrafe.cpp">
+      <Filter>External\HLStrafe</Filter>
+    </ClCompile>
+    <ClCompile Include="CAutoTertiaryAttackGlitchModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="patterns.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="notifications.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CESPModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="CSlideWalkModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="CAntiAimModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="command_hooks.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="CSelfSinkModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="CServerCrasherModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="CTimeMachineModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="CAutoFreezeOnChatModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="CBacktrackModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="CFakeLatencyModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="CForwardtrackModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="queue.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="svenmod_emulation.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="input_buttons.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="extra_player_info.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="player_sp.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CRagebotModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="CAntiSlowhackModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Safety</Filter>
+    </ClCompile>
+    <ClCompile Include="virtual_console.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CDiscordRPCModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="metahook_emulation.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="CMovementCommandRateLimiterModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="CStrafeModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="CMessageStealerModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="CDisablerModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="CConsoleSpammerModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="callstack.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="stubs.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="angelscript_scripting_api.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="scriptbuilder.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="scriptstdstring.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="scriptstdstring_utils.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="scriptarray.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="script_console.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="script_module.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="as_vector.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="as_enginestuff.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="as_event_api.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="as_callroutines.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CStresserModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="CKickerModule.cpp">
+      <Filter>Impl\Features\Modules\Source Files\Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="movement_recorder.cpp">
+      <Filter>TAS</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Precompiled Header</Filter>
+    </ClCompile>
+    <ClCompile Include="strafe.cpp">
+      <Filter>Strafer</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows_Hooks.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="entity_descriptions.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="entity_list.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="as_value_api.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="scriptany.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="string_utils.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="string.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="script_string.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_gui.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="HLStrafe\hlstrafe_int.cpp">
+      <Filter>External\HLStrafe</Filter>
+    </ClCompile>
+    <ClCompile Include="event_api.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="call_routines.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_hud.cpp">
+      <Filter>Impl\Features\Custom HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_fonts.cpp">
+      <Filter>Impl\Features\Custom Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="hud_arraylist_element.cpp">
+      <Filter>Impl\Features\Custom HUD\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="int_packet_dump.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

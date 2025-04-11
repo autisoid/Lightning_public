@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Proprietary|Win32">
+      <Configuration>Debug Proprietary</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Proprietary|Win32">
+      <Configuration>Release Proprietary</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{87030B16-C7A2-44EF-B77E-2747557569B8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>sveninternal</RootNamespace>
+    <WindowsTargetPlatformVersion>$([Microsoft.Build.Utilities.ToolLocationHelper]::GetLatestSDKTargetPlatformVersion('Windows', '10.0'))</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Proprietary|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Proprietary|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Proprietary|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Proprietary|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Proprietary|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Proprietary|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;SVENINTERNAL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)\External\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(SolutionDir)\External\Lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/force /ignore:4006 /ignore:4088 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Proprietary|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>XWHITEY_PROPRIETARY;WIN32;_DEBUG;SVENINTERNAL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)\External\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(SolutionDir)\External\Lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/force /ignore:4006 /ignore:4088 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;SVENINTERNAL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)\External\Include</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalOptions>/force /ignore:4006 /ignore:4088 /stub:stub.dat %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(SolutionDir)\External\Lib</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <BaseAddress>
+      </BaseAddress>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <FixedBaseAddress>false</FixedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Proprietary|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>XWHITEY_PROPRIETARY;WIN32;NDEBUG;SVENINTERNAL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)\External\Include</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalOptions>/force /ignore:4006 /ignore:4088 /stub:stub.dat %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(SolutionDir)\External\Lib</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <BaseAddress>
+      </BaseAddress>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <FixedBaseAddress>false</FixedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\External\Include\freetype\config\ftconfig.h" />
+    <ClInclude Include="..\External\Include\freetype\config\ftheader.h" />
+    <ClInclude Include="..\External\Include\freetype\config\ftmodule.h" />
+    <ClInclude Include="..\External\Include\freetype\config\ftoption.h" />
+    <ClInclude Include="..\External\Include\freetype\config\ftstdlib.h" />
+    <ClInclude Include="..\External\Include\freetype\config\integer-types.h" />
+    <ClInclude Include="..\External\Include\freetype\config\mac-support.h" />
+    <ClInclude Include="..\External\Include\freetype\config\public-macros.h" />
+    <ClInclude Include="..\External\Include\freetype\freetype.h" />
+    <ClInclude Include="..\External\Include\freetype\ftadvanc.h" />
+    <ClInclude Include="..\External\Include\freetype\ftbbox.h" />
+    <ClInclude Include="..\External\Include\freetype\ftbdf.h" />
+    <ClInclude Include="..\External\Include\freetype\ftbitmap.h" />
+    <ClInclude Include="..\External\Include\freetype\ftbzip2.h" />
+    <ClInclude Include="..\External\Include\freetype\ftcache.h" />
+    <ClInclude Include="..\External\Include\freetype\ftchapters.h" />
+    <ClInclude Include="..\External\Include\freetype\ftcid.h" />
+    <ClInclude Include="..\External\Include\freetype\ftcolor.h" />
+    <ClInclude Include="..\External\Include\freetype\ftdriver.h" />
+    <ClInclude Include="..\External\Include\freetype\fterrdef.h" />
+    <ClInclude Include="..\External\Include\freetype\fterrors.h" />
+    <ClInclude Include="..\External\Include\freetype\ftfntfmt.h" />
+    <ClInclude Include="..\External\Include\freetype\ftgasp.h" />
+    <ClInclude Include="..\External\Include\freetype\ftglyph.h" />
+    <ClInclude Include="..\External\Include\freetype\ftgxval.h" />
+    <ClInclude Include="..\External\Include\freetype\ftgzip.h" />
+    <ClInclude Include="..\External\Include\freetype\ftimage.h" />
+    <ClInclude Include="..\External\Include\freetype\ftincrem.h" />
+    <ClInclude Include="..\External\Include\freetype\ftlcdfil.h" />
+    <ClInclude Include="..\External\Include\freetype\ftlist.h" />
+    <ClInclude Include="..\External\Include\freetype\ftlogging.h" />
+    <ClInclude Include="..\External\Include\freetype\ftlzw.h" />
+    <ClInclude Include="..\External\Include\freetype\ftmac.h" />
+    <ClInclude Include="..\External\Include\freetype\ftmm.h" />
+    <ClInclude Include="..\External\Include\freetype\ftmodapi.h" />
+    <ClInclude Include="..\External\Include\freetype\ftmoderr.h" />
+    <ClInclude Include="..\External\Include\freetype\ftotval.h" />
+    <ClInclude Include="..\External\Include\freetype\ftoutln.h" />
+    <ClInclude Include="..\External\Include\freetype\ftparams.h" />
+    <ClInclude Include="..\External\Include\freetype\ftpfr.h" />
+    <ClInclude Include="..\External\Include\freetype\ftrender.h" />
+    <ClInclude Include="..\External\Include\freetype\ftsizes.h" />
+    <ClInclude Include="..\External\Include\freetype\ftsnames.h" />
+    <ClInclude Include="..\External\Include\freetype\ftstroke.h" />
+    <ClInclude Include="..\External\Include\freetype\ftsynth.h" />
+    <ClInclude Include="..\External\Include\freetype\ftsystem.h" />
+    <ClInclude Include="..\External\Include\freetype\fttrigon.h" />
+    <ClInclude Include="..\External\Include\freetype\fttypes.h" />
+    <ClInclude Include="..\External\Include\freetype\ftwinfnt.h" />
+    <ClInclude Include="..\External\Include\freetype\otsvg.h" />
+    <ClInclude Include="..\External\Include\freetype\t1tables.h" />
+    <ClInclude Include="..\External\Include\freetype\ttnameid.h" />
+    <ClInclude Include="..\External\Include\freetype\tttables.h" />
+    <ClInclude Include="..\External\Include\freetype\tttags.h" />
+    <ClInclude Include="..\External\Include\ft2build.h" />
+    <ClInclude Include="AlbertSansFont.h" />
+    <ClInclude Include="angelscript\angelscript.h" />
+    <ClInclude Include="angelscript\as_array.h" />
+    <ClInclude Include="angelscript\as_atomic.h" />
+    <ClInclude Include="angelscript\as_builder.h" />
+    <ClInclude Include="angelscript\as_bytecode.h" />
+    <ClInclude Include="angelscript\as_callfunc.h" />
+    <ClInclude Include="angelscript\as_compiler.h" />
+    <ClInclude Include="angelscript\as_config.h" />
+    <ClInclude Include="angelscript\as_configgroup.h" />
+    <ClInclude Include="angelscript\as_context.h" />
+    <ClInclude Include="angelscript\as_criticalsection.h" />
+    <ClInclude Include="angelscript\as_datatype.h" />
+    <ClInclude Include="angelscript\as_debug.h" />
+    <ClInclude Include="angelscript\as_gc.h" />
+    <ClInclude Include="angelscript\as_generic.h" />
+    <ClInclude Include="angelscript\as_map.h" />
+    <ClInclude Include="angelscript\as_memory.h" />
+    <ClInclude Include="angelscript\as_module.h" />
+    <ClInclude Include="angelscript\as_namespace.h" />
+    <ClInclude Include="angelscript\as_objecttype.h" />
+    <ClInclude Include="angelscript\as_outputbuffer.h" />
+    <ClInclude Include="angelscript\as_parser.h" />
+    <ClInclude Include="angelscript\as_property.h" />
+    <ClInclude Include="angelscript\as_restore.h" />
+    <ClInclude Include="angelscript\as_scriptcode.h" />
+    <ClInclude Include="angelscript\as_scriptengine.h" />
+    <ClInclude Include="angelscript\as_scriptfunction.h" />
+    <ClInclude Include="angelscript\as_scriptnode.h" />
+    <ClInclude Include="angelscript\as_scriptobject.h" />
+    <ClInclude Include="angelscript\as_string.h" />
+    <ClInclude Include="angelscript\as_string_util.h" />
+    <ClInclude Include="angelscript\as_symboltable.h" />
+    <ClInclude Include="angelscript\as_texts.h" />
+    <ClInclude Include="angelscript\as_thread.h" />
+    <ClInclude Include="angelscript\as_tokendef.h" />
+    <ClInclude Include="angelscript\as_tokenizer.h" />
+    <ClInclude Include="angelscript\as_typeinfo.h" />
+    <ClInclude Include="angelscript\as_variablescope.h" />
+    <ClInclude Include="angelscript_scripting_api.hpp" />
+    <ClInclude Include="as_callroutines.hpp" />
+    <ClInclude Include="as_enginestuff.hpp" />
+    <ClInclude Include="as_event_api.hpp" />
+    <ClInclude Include="as_value_api.hpp" />
+    <ClInclude Include="as_vector.hpp" />
+    <ClInclude Include="CAirStuckModule.hpp" />
+    <ClInclude Include="callstack.hpp" />
+    <ClInclude Include="call_routines.hpp" />
+    <ClInclude Include="CAntiAimModule.hpp" />
+    <ClInclude Include="CAntiSlowhackModule.hpp" />
+    <ClInclude Include="CApplicationSpeedModule.hpp" />
+    <ClInclude Include="CAutoFreezeOnChatModule.hpp" />
+    <ClInclude Include="CAutoJumpbugModule.hpp" />
+    <ClInclude Include="CAutoJumpModule.hpp" />
+    <ClInclude Include="CAutoTertiaryAttackGlitchModule.hpp" />
+    <ClInclude Include="CBacktrackModule.hpp" />
+    <ClInclude Include="CBobbingModule.hpp" />
+    <ClInclude Include="CBreakLCModule.hpp" />
+    <ClInclude Include="CClientDesignerModule.hpp" />
+    <ClInclude Include="CConsoleSpammerModule.hpp" />
+    <ClInclude Include="CDebugModule.hpp" />
+    <ClInclude Include="CDisablerModule.hpp" />
+    <ClInclude Include="CDiscordRPCModule.hpp" />
+    <ClInclude Include="CESPModule.hpp" />
+    <ClInclude Include="CFakeLagModule.hpp" />
+    <ClInclude Include="CClickGUIModule.hpp" />
+    <ClInclude Include="CDoubletapModule.hpp" />
+    <ClInclude Include="CFakeLatencyModule.hpp" />
+    <ClInclude Include="CFastCrowbarModule.hpp" />
+    <ClInclude Include="CForwardtrackModule.hpp" />
+    <ClInclude Include="CFrameSkipperModule.hpp" />
+    <ClInclude Include="cheat.hpp" />
+    <ClInclude Include="CHUDModule.hpp" />
+    <ClInclude Include="CInstantRespawnModule.hpp" />
+    <ClInclude Include="CKickerModule.hpp" />
+    <ClInclude Include="click_gui.hpp" />
+    <ClInclude Include="ClientDLL.hpp" />
+    <ClInclude Include="CMessageStealerModule.hpp" />
+    <ClInclude Include="CMovementCommandRateLimiterModule.hpp" />
+    <ClInclude Include="command_hooks.hpp" />
+    <ClInclude Include="common.hpp" />
+    <ClInclude Include="compress.hpp" />
+    <ClInclude Include="config_mgr.hpp" />
+    <ClInclude Include="CRagebotModule.hpp" />
+    <ClInclude Include="CSelfSinkModule.hpp" />
+    <ClInclude Include="CServerCrasherModule.hpp" />
+    <ClInclude Include="CSlideWalkModule.hpp" />
+    <ClInclude Include="CSpeedModule.hpp" />
+    <ClInclude Include="CStrafeModule.hpp" />
+    <ClInclude Include="CStresserModule.hpp" />
+    <ClInclude Include="CTimeMachineModule.hpp" />
+    <ClInclude Include="custom_fonts.hpp" />
+    <ClInclude Include="custom_hud.hpp" />
+    <ClInclude Include="dummyfile.hpp" />
+    <ClInclude Include="entity_descriptions.hpp" />
+    <ClInclude Include="entity_list.hpp" />
+    <ClInclude Include="event_api.hpp" />
+    <ClInclude Include="extra_player_info.hpp" />
+    <ClInclude Include="file_mgr.hpp" />
+    <ClInclude Include="functional_lite\functional_empty_hdr.hpp" />
+    <ClInclude Include="functional_lite\functional_fake_sal2.hpp" />
+    <ClInclude Include="functional_lite\functional_lite.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_arithmetic.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_cast.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_config.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_math.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_msvc_fixes.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_parameter_pack.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_rng.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_stdbool.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_stddef.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_stdnull.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_string.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_memory.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_type_traits.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_allocator.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_assert.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_preprocessor.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_static_assert.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_unique_ptr.hpp" />
+    <ClInclude Include="functional_lite\functional_lite_vector.hpp" />
+    <ClInclude Include="globals.hpp" />
+    <ClInclude Include="hlsdk_mini.hpp" />
+    <ClInclude Include="HLStrafe\hlstrafe.hpp" />
+    <ClInclude Include="HLStrafe\util.hpp" />
+    <ClInclude Include="hooks.hpp" />
+    <ClInclude Include="hud_arraylist_element.hpp" />
+    <ClInclude Include="HwDLL.hpp" />
+    <ClInclude Include="iface.hpp" />
+    <ClInclude Include="ImGui\imconfig.h" />
+    <ClInclude Include="ImGui\imgui.h" />
+    <ClInclude Include="ImGui\imgui_freetype.h" />
+    <ClInclude Include="ImGui\imgui_impl_opengl3.h" />
+    <ClInclude Include="ImGui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="ImGui\imgui_internal.h" />
+    <ClInclude Include="ImGui\imstb_rectpack.h" />
+    <ClInclude Include="ImGui\imstb_textedit.h" />
+    <ClInclude Include="ImGui\imstb_truetype.h" />
+    <ClInclude Include="input_buttons.hpp" />
+    <ClInclude Include="int_packet_dump.hpp" />
+    <ClInclude Include="linked_list.hpp" />
+    <ClInclude Include="MemUtils.hpp" />
+    <ClInclude Include="metahook_emulation.hpp" />
+    <ClInclude Include="MinHook\buffer.h" />
+    <ClInclude Include="MinHook\hde\hde32.h" />
+    <ClInclude Include="MinHook\hde\hde64.h" />
+    <ClInclude Include="MinHook\hde\pstdint.h" />
+    <ClInclude Include="MinHook\hde\table32.h" />
+    <ClInclude Include="MinHook\hde\table64.h" />
+    <ClInclude Include="MinHook\MinHook.h" />
+    <ClInclude Include="MinHook\trampoline.h" />
+    <ClInclude Include="module.hpp" />
+    <ClInclude Include="module_manager.hpp" />
+    <ClInclude Include="movement_recorder.hpp" />
+    <ClInclude Include="notifications.hpp" />
+    <ClInclude Include="patterns.hpp" />
+    <ClInclude Include="player_sp.hpp" />
+    <ClInclude Include="preprocessor.hpp" />
+    <ClInclude Include="protocol.hpp" />
+    <ClInclude Include="queue.hpp" />
+    <ClInclude Include="scriptany.h" />
+    <ClInclude Include="scriptarray.h" />
+    <ClInclude Include="scriptbuilder.h" />
+    <ClInclude Include="scriptstdstring.h" />
+    <ClInclude Include="script_console.hpp" />
+    <ClInclude Include="script_module.hpp" />
+    <ClInclude Include="script_string.hpp" />
+    <ClInclude Include="SimpleIni.h" />
+    <ClInclude Include="simple_gui.hpp" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="strafe.hpp" />
+    <ClInclude Include="strafe_utils.hpp" />
+    <ClInclude Include="string.hpp" />
+    <ClInclude Include="string_utils.hpp" />
+    <ClInclude Include="stubs.hpp" />
+    <ClInclude Include="svenmod_emulation.hpp" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="timer.hpp" />
+    <ClInclude Include="utils.hpp" />
+    <ClInclude Include="value.hpp" />
+    <ClInclude Include="virtual_console.hpp" />
+    <ClInclude Include="Windows_Hooks.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="angelscript_scripting_api.cpp" />
+    <ClCompile Include="as_callroutines.cpp" />
+    <ClCompile Include="as_enginestuff.cpp" />
+    <ClCompile Include="as_event_api.cpp" />
+    <ClCompile Include="as_value_api.cpp" />
+    <ClCompile Include="as_vector.cpp" />
+    <ClCompile Include="CAirStuckModule.cpp" />
+    <ClCompile Include="callstack.cpp" />
+    <ClCompile Include="call_routines.cpp" />
+    <ClCompile Include="CAntiAimModule.cpp" />
+    <ClCompile Include="CAntiSlowhackModule.cpp" />
+    <ClCompile Include="CApplicationSpeedModule.cpp" />
+    <ClCompile Include="CAutoFreezeOnChatModule.cpp" />
+    <ClCompile Include="CAutoJumpbugModule.cpp" />
+    <ClCompile Include="CAutoJumpModule.cpp" />
+    <ClCompile Include="CAutoTertiaryAttackGlitchModule.cpp" />
+    <ClCompile Include="CBacktrackModule.cpp" />
+    <ClCompile Include="CBobbingModule.cpp" />
+    <ClCompile Include="CBreakLCModule.cpp" />
+    <ClCompile Include="CClientDesignerModule.cpp" />
+    <ClCompile Include="CConsoleSpammerModule.cpp" />
+    <ClCompile Include="CDebugModule.cpp" />
+    <ClCompile Include="CDisablerModule.cpp" />
+    <ClCompile Include="CDiscordRPCModule.cpp" />
+    <ClCompile Include="CESPModule.cpp" />
+    <ClCompile Include="CFakeLagModule.cpp" />
+    <ClCompile Include="CClickGUIModule.cpp" />
+    <ClCompile Include="CDoubletapModule.cpp" />
+    <ClCompile Include="CFakeLatencyModule.cpp" />
+    <ClCompile Include="CFastCrowbarModule.cpp" />
+    <ClCompile Include="CForwardtrackModule.cpp" />
+    <ClCompile Include="CFrameSkipperModule.cpp" />
+    <ClCompile Include="cheat.cpp" />
+    <ClCompile Include="CHUDModule.cpp" />
+    <ClCompile Include="CInstantRespawnModule.cpp" />
+    <ClCompile Include="CKickerModule.cpp" />
+    <ClCompile Include="click_gui.cpp" />
+    <ClCompile Include="ClientDLL.cpp" />
+    <ClCompile Include="CMessageStealerModule.cpp" />
+    <ClCompile Include="CMovementCommandRateLimiterModule.cpp" />
+    <ClCompile Include="command_hooks.cpp" />
+    <ClCompile Include="config_mgr.cpp" />
+    <ClCompile Include="CRagebotModule.cpp" />
+    <ClCompile Include="CSelfSinkModule.cpp" />
+    <ClCompile Include="CServerCrasherModule.cpp" />
+    <ClCompile Include="CSlideWalkModule.cpp" />
+    <ClCompile Include="CSpeedModule.cpp" />
+    <ClCompile Include="CStrafeModule.cpp" />
+    <ClCompile Include="CStresserModule.cpp" />
+    <ClCompile Include="CTimeMachineModule.cpp" />
+    <ClCompile Include="custom_fonts.cpp" />
+    <ClCompile Include="custom_hud.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="entity_descriptions.cpp" />
+    <ClCompile Include="entity_list.cpp" />
+    <ClCompile Include="event_api.cpp" />
+    <ClCompile Include="extra_player_info.cpp" />
+    <ClCompile Include="file_mgr.cpp" />
+    <ClCompile Include="globals.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug Proprietary|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Proprietary|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="HLStrafe\hlstrafe.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug Proprietary|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Proprietary|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="HLStrafe\hlstrafe_int.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Proprietary|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug Proprietary|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="hooks.cpp" />
+    <ClCompile Include="hud_arraylist_element.cpp" />
+    <ClCompile Include="HwDLL.cpp" />
+    <ClCompile Include="input_buttons.cpp" />
+    <ClCompile Include="int_packet_dump.cpp" />
+    <ClCompile Include="metahook_emulation.cpp" />
+    <ClCompile Include="module.cpp" />
+    <ClCompile Include="module_manager.cpp" />
+    <ClCompile Include="movement_recorder.cpp" />
+    <ClCompile Include="notifications.cpp" />
+    <ClCompile Include="patterns.cpp" />
+    <ClCompile Include="player_sp.cpp" />
+    <ClCompile Include="protocol.cpp" />
+    <ClCompile Include="queue.cpp" />
+    <ClCompile Include="scriptany.cpp" />
+    <ClCompile Include="scriptarray.cpp" />
+    <ClCompile Include="scriptbuilder.cpp" />
+    <ClCompile Include="scriptstdstring.cpp" />
+    <ClCompile Include="scriptstdstring_utils.cpp" />
+    <ClCompile Include="script_console.cpp" />
+    <ClCompile Include="script_module.cpp" />
+    <ClCompile Include="script_string.cpp" />
+    <ClCompile Include="simple_gui.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug Proprietary|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Proprietary|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="strafe.cpp" />
+    <ClCompile Include="string.cpp" />
+    <ClCompile Include="string_utils.cpp" />
+    <ClCompile Include="stubs.cpp" />
+    <ClCompile Include="svenmod_emulation.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="value.cpp" />
+    <ClCompile Include="virtual_console.cpp" />
+    <ClCompile Include="Windows_Hooks.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
