@@ -1,7 +1,7 @@
 # Lightning
 Lightning (a.k.a. "allah client") (a.k.a. sven_internal between some people) - a Minecraft styled internal DLC for Sven Co-op, adding a lot of new features.
 
-Written in C++. Authors: xWhitey, ScriptedSnark, kolokola777, oxiKKK (Timestop mode in AirStuck).
+Written in C++. Authors: xWhitey, oxiKKK (Timestop mode in AirStuck).
 
 Special thanks to: ReHLDS for exploits, Sw1ft747 for the idea and for some modules, a1++ for some exploits, sh0tx, guwi, desu.
 
